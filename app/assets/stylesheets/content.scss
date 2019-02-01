@@ -1,22 +1,48 @@
 a {
   text-decoration: none;
+  color: #dddddd;
+  // background-color: rgba(143, 112, 77, 0.6);
 }
 
-#background {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2));
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
-}
-
-.stretch {
-  width:100%;
-  height:100%;
+a:hover {
+  font-weight: bold;
 }
 
 ul {
   list-style: none;
+}
+
+.backgrounded {
+  background-repeat: no-repeat;
+  // background-image: linear-gradient(rgba(175, 197, 210, 0.1), rgba(143, 112, 77, 0.3)), url(/img/angkor_wat.jpg);
+  background-image: linear-gradient(rgba(143, 112, 77, 0.4), rgba(143, 112, 77, 0.4)), url(/img/angkor_wat.jpg);
+  background-size: cover;
+}
+
+.text-friendly {
+  border-radius: 5%;
+  padding: 0 5%;
+  margin: 0 15%;
+  // box-shadow: 5px 5px silver;
+}
+
+h2, h3 {
+  text-shadow: 2px 2px 1px rgba(50,100,50,0.9);
+}
+
+p {
+  color: white;
+  text-indent: 1em;
+  margin: 12px 0;
+  padding: 0;
+}
+
+.footer {
+  color: white;
+}
+
+.text-section {
+  background-color: rgba(8, 8, 0, 0.75);
+  padding: 1% 3%;
+  border-radius: 4px;
 }
