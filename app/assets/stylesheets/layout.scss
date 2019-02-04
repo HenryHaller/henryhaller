@@ -21,6 +21,7 @@ h1, h2, h3 {
 
 .middle-grid {
   padding-bottom: 30px;
+  @include flex($direction: column, $justify: space-around, $align: center);
 }
 
 .header {
