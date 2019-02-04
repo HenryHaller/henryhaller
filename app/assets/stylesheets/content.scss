@@ -62,3 +62,13 @@ p {
 .middle-grid {
   background-color: rgba( 192, 192, 192, 0.5 );
 }
+
+.name-job-seperator {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .name-job-seperator {
+    display: block;
+  }
+}

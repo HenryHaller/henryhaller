@@ -3,13 +3,14 @@ body {
   padding: 0;
 }
 
-h2, h3 {
+h1, h2, h3 {
   text-align: center;
 }
 
+
 .primary-grid {
   display: grid;
-  grid-template-rows: 60px 50px 1fr 50px 40px;
+  grid-template-rows: 120px 50px 1fr 50px 40px;
 }
 
 .primary-container {
@@ -24,6 +25,17 @@ h2, h3 {
 
 
 @media (min-width: 992px) {
+  .header-title {
+    @include flex($direction: row, $justify: space-between, $align: center)
+  }
+
+h1 {
+  display: inline-block;
+  // margin: 0 auto;
+}
+  .primary-grid {
+    grid-template-rows: 60px 50px 1fr 50px 40px;
+  }
   .middle-grid {
     display: grid;
     grid-template-columns: 4fr 1fr;
