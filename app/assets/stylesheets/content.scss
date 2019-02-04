@@ -1,6 +1,7 @@
 a {
   text-decoration: none;
   color: $link-color;
+  font-size: 20px;
   // background-color: rgba(143, 112, 77, 0.6);
 }
 
@@ -10,7 +11,7 @@ a:hover {
 
 .backgrounded {
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(143, 112, 77, 0.3), rgba(143, 112, 77, 0.4)), url(/img/angkor_wat.jpg);
+  background-image: linear-gradient(rgba(143, 112, 77, 0.3), rgba(143, 112, 77, 0.4)), url(/img/angkor_992.jpg);
   background-size: cover;
 }
 
@@ -45,8 +46,8 @@ h1 {
 }
 
 
-p, a {
-  font-size: 20px;
+p {
+  font-size: 26px;
 }
 
 p {
@@ -73,6 +74,12 @@ p {
 }
 
 @media (min-width: 992px) {
+  .backgrounded {
+    background-image: linear-gradient(rgba(143, 112, 77, 0.3), rgba(143, 112, 77, 0.4)), url(/img/angkor_wat.jpg);
+  }
+  p {
+    font-size: 20px;
+  }
   .name-job-seperator {
     display: block;
   }
