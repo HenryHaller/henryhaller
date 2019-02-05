@@ -1,0 +1,134 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto 1em 1fr auto 1em 40px;
+
+
+  grid-template-areas:
+  "hd hd hd hd hd hd hd"
+  ". . . . . . ."
+  "about about about about about about about"
+  "lnks lnks lnks lnks lnks lnks lnks"
+  ". . . . . . ."
+  "ft ft ft ft ft ft ft";
+
+  @media (min-width: 1200px) {
+    grid-template-rows: auto 1em 1fr 1em 40px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd"
+    ". . . . . . ."
+    "about about about about about about lnks"
+    ". . . . . . ."
+    "ft ft ft ft ft ft ft";
+  }
+}
+
+.header {
+  grid-area: hd;
+}
+
+.about {
+  grid-area: about;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4em 1fr 4em 1fr 4em 1fr;
+  grid-template-areas:
+  "title1"
+  "about1"
+  "title2"
+  "about2"
+  "title3"
+  "about3";
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "title1 about1"
+    "title2 about2"
+    "title3 about3"
+  }
+
+  .title1 {
+    grid-area: title1;
+    place-self: center center;
+  }
+
+  .title2 {
+    grid-area: title2;
+    place-self: center center;
+  }
+
+  .title3 {
+    grid-area: title3;
+    place-self: center center;
+  }
+
+  .about1 {
+    grid-area: about1
+  }
+
+  .about2 {
+    grid-area: about2
+  }
+
+  .about3 {
+    grid-area: about3
+  }
+}
+
+.links {
+  grid-area: lnks;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 4em 1fr;
+  grid-template-areas:
+  "connect-title1 connect-title2 connect-title3"
+  "connect1 connect2 connect3";
+
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 4em 1fr);
+    grid-template-areas:
+    "connect-title1"
+    "connect1"
+    "connect-title2"
+    "connect2"
+    "connect-title3"
+    "connect3";
+  }
+
+  .connect-title1 {
+    grid-area: connect-title1;
+    justify-self: center;
+  }
+
+  .connect-title2 {
+    grid-area: connect-title2;
+    justify-self: center;
+  }
+
+  .connect-title3 {
+    grid-area: connect-title3;
+    justify-self: center;
+  }
+
+  .connect1 {
+    grid-area: connect1;
+    place-self: start center;
+  }
+
+  .connect2 {
+    grid-area: connect2;
+    place-self: start center;
+  }
+
+  .connect3 {
+    grid-area: connect3;
+    place-self: start center;
+  }
+
+}
+
+.footer {
+  grid-area: ft;
+}

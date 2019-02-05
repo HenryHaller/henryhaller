@@ -1,0 +1,15 @@
+.light-background {
+  background-color: rgba( 192, 192, 192, 0.5 );
+}
+
+.backgrounded {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(143, 112, 77, 0.3), rgba(143, 112, 77, 0.4)), url(/img/angkor_992.jpg);
+  background-size: cover;
+}
+
+@media (min-width: 1200px) {
+  .backgrounded {
+    background-image: linear-gradient(rgba(143, 112, 77, 0.3), rgba(143, 112, 77, 0.4)), url(/img/angkor_wat.jpg);
+  }
+}

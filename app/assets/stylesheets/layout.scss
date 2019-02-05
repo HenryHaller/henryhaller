@@ -1,75 +1,75 @@
-body {
-  margin: 0;
-  padding: 0;
-}
+// body {
+//   margin: 0;
+//   padding: 0;
+// }
 
-h1, h2, h3 {
-  text-align: center;
-}
+// h1, h2, h3 {
+//   text-align: center;
+// }
 
 
-.primary-grid {
-  display: grid;
-  grid-template-rows: 120px 50px 1fr 50px 40px;
-}
+// .primary-grid {
+//   display: grid;
+//   grid-template-rows: 120px 50px 1fr 50px 40px;
+// }
 
-.primary-container {
-  margin: 0px;
-  padding: 0px;
-  min-height: calc(100vh - 60px);
-}
+// .primary-container {
+//   margin: 0px;
+//   padding: 0px;
+//   min-height: calc(100vh - 60px);
+// }
 
-.middle-grid {
-  padding-bottom: 30px;
-  @include flex($direction: column, $justify: space-around, $align: center);
-}
+// .middle-grid {
+//   padding-bottom: 30px;
+//   @include flex($direction: column, $justify: space-around, $align: center);
+// }
 
-.header {
-  padding: 0 4vw;
-}
+// .header {
+//   padding: 0 4vw;
+// }
 
-.middle-right {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  width: 100%;
-  height: 100%;
-}
+// .middle-right {
+//   display: grid;
+//   grid-template-columns: 1fr 2fr;
+//   grid-template-rows: 1fr 1fr 1fr;
+//   width: 100%;
+//   height: 100%;
+// }
 
-.links-box {
-  @include flex($direction: row, $justify: space-around, $align:center)
-}
+// .links-box {
+//   @include flex($direction: row, $justify: space-around, $align:center)
+// }
 
-@media (min-width: 992px) {
+// @media (min-width: 992px) {
 
-  .primary-container {
-    min-height: 100vh;
-  }
+//   .primary-container {
+//     min-height: 100vh;
+//   }
 
-  .links-box {
-    @include flex($direction: column, $justify: space-around, $align: center)
-  }
+//   .links-box {
+//     @include flex($direction: column, $justify: space-around, $align: center)
+//   }
 
-  .header-title {
-    @include flex($direction: row, $justify: space-between, $align: center)
-  }
+//   .header-title {
+//     @include flex($direction: row, $justify: space-between, $align: center)
+//   }
 
-  h1 {
-    display: inline-block;
-  }
-  .primary-grid {
-    grid-template-rows: 60px 50px 1fr 50px 40px;
-  }
-  .middle-grid {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-  }
+//   h1 {
+//     display: inline-block;
+//   }
+//   .primary-grid {
+//     grid-template-rows: 60px 50px 1fr 50px 40px;
+//   }
+//   .middle-grid {
+//     display: grid;
+//     grid-template-columns: 4fr 1fr;
+//   }
 
-  .middle-left {
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
+//   .middle-left {
+//     display: grid;
+//     grid-template-columns: 1fr 6fr;
+//     grid-template-rows: 1fr 1fr 1fr;
+//   }
 
-}
+// }
 

@@ -1,0 +1,42 @@
+@mixin flex($direction: row, $justify: space-around, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.header {
+  @include flex;
+}
+
+.header-title {
+  @include flex($direction: column, $justify: space-around);
+
+  @media (min-width: 1200px) {
+    @include flex($justify: space-between)
+  }
+}
+
+.links-box {
+  @include flex;
+}
+
+
+// .links {
+//   @include flex($direction: column, $justify: space-between);
+//   .flex-hor-ver {
+//     @include flex;
+//     @media (min-width: 1200px) {
+//       @include flex($direction: column);
+//     }
+//   }
+// }
+
+.connect-link {
+  @include flex;
+}
+
+.footer {
+  @include flex;
+}
+

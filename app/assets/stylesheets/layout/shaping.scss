@@ -1,0 +1,22 @@
+.primary-container {
+  margin: 0px;
+  padding: 0px;
+  min-height: calc(100vh - 60px);
+}
+
+@media (min-width: 1200px) {
+  .primary-container {
+    min-height: 100vh;
+  }
+}
+
+.links-box {
+  padding-top:24px;
+}
+
+.links {
+  @media (min-width: 1200px) {
+    padding-right: 16px;
+  }
+  padding-top: 12px;
+}
