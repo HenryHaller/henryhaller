@@ -6,22 +6,23 @@
   background-repeat: no-repeat;
   background-image: linear-gradient(rgba(143, 112, 77, 0.3), rgba(143, 112, 77, 0.4)), url(/img/angkor_xs.jpg);
   background-size: cover;
+  // background: center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   .backgrounded {
     background-image: linear-gradient(rgba(143, 112, 77, 0.3), rgba(143, 112, 77, 0.4)), url(/img/angkor_lg.jpg);
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1200px) and (max-width: 1599px) {
   .backgrounded {
     background-image: linear-gradient(rgba(143, 112, 77, 0.3), rgba(143, 112, 77, 0.4)), url(/img/angkor_md.jpg);
   }
 }
 
 
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .backgrounded {
     background-image: linear-gradient(rgba(143, 112, 77, 0.3), rgba(143, 112, 77, 0.4)), url(/img/angkor_sm.jpg);
   }
