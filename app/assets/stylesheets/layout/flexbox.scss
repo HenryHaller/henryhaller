@@ -40,3 +40,12 @@
   @include flex;
 }
 
+.text-section {
+  @include flex($direction: column);
+}
+
+.connect1, .connect2, .connect3 {
+  @include flex;
+  height: 100%;
+  padding: 0;
+}
