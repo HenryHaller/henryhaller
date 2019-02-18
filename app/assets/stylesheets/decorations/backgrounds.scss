@@ -4,12 +4,18 @@
 
 .backgrounded {
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(143, 112, 77, 0.3), rgba(143, 112, 77, 0.4)), url(/img/angkor_992.jpg);
+  background-image: linear-gradient(rgba(143, 112, 77, 0.3), rgba(143, 112, 77, 0.4)), url(/img/angkor_xs.jpg);
   background-size: cover;
 }
 
 @media (min-width: 1200px) {
   .backgrounded {
     background-image: linear-gradient(rgba(143, 112, 77, 0.3), rgba(143, 112, 77, 0.4)), url(/img/angkor_wat.jpg);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .backgrounded {
+    background-image: linear-gradient(rgba(143, 112, 77, 0.3), rgba(143, 112, 77, 0.4)), url(/img/angkor_992.jpg);
   }
 }
